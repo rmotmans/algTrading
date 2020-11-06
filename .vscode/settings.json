@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\robbe\\anaconda3\\envs\\data_science\\python.exe"
+    "python.pythonPath": "C:\\Users\\robbe\\anaconda3\\envs\\data_science\\python.exe",
+    "python.linting.pylintArgs": ["--init-hook","import sys; sys.path.insert(0, './algTrading')"
+    ]
 }

@@ -19,6 +19,21 @@ def moving_average(data, period):
     return result
 
 """
+function SMMA (smoothed moving average)
+    input:  - data array
+            - moving average length
+
+    output: -array of same length as data array, but with smoothed moving average
+"""
+def SMMA(data, period):
+    p_MM = [data[0]]
+    for i in range(len(data)-1):
+        p_MM.append(((period - 1)*p_MM[i]+data[i+1])/period)
+
+    return p_MM
+
+
+"""
 function moving_standard_deviation
     input:  - data array
             - moving standard deviation length
